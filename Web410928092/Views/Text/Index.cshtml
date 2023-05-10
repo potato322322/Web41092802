@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginForm("Index", "Test", FormMethod.Post))
+{
+    <div>
+        帳號:@Html.TextBox("email", "test@gmail.com")
+        <br />
+        密碼:@Html.Password("password", "123456")
+        <br />
+        新舊:@Html.RadioButton("isNew", "0")新生 @Html.RadioButton("isNew", "1") 舊生<br />
+        性別:@Html.RadioButton("geder", "A")男生
+        @Html.RadioButton("geder", "B")女生<br />
+    </div> 
+
+}
+
