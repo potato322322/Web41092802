@@ -13,7 +13,33 @@
         新舊:@Html.RadioButton("isNew", "0")新生 @Html.RadioButton("isNew", "1") 舊生<br />
         性別:@Html.RadioButton("geder", "A")男生
         @Html.RadioButton("geder", "B")女生<br />
-    </div> 
+        興趣:@Html.CheckBox("reading", "A")看書
+        @Html.CheckBox("swimming", "B")游泳<br />
+        關於我:@Html.TextArea("about")
+    </div>
+
+}
+@{
+    var message = "hi";
+    var isStudent = false;
+}
+<p>@message</p>
+<p>@DateTime.Now</p>
+
+
+@if (isStudent)
+{
+    <p>是學生</p>
+}
+else
+{
+    <p>不是學生</p>
+
+}
+<h2> 2~10 </h2>
+@for (int i = 1; i < 11; i++)
+{
+    <p>@i</p>
 
 }
 
