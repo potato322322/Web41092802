@@ -23,7 +23,7 @@
             @class = "control-label col-md-2"
         })
         <div class="col-md-10">
-            @Html.CheckBoxFor(model => model.Username, new
+            @Html.EditorFor(model => model.Username, new
             {
                 htmlAttributes = new
                 {
@@ -83,7 +83,7 @@
             @class = "control-label col-md-2"
         })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.IsActive, new
+            @Html.CheckBoxFor(model => model.IsActive, new
             {
                 htmlAttributes = new
                 {
