@@ -152,6 +152,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Partials\Stubents.cs" />
     <Compile Include="Models\Stubent.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
